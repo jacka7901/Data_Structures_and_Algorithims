@@ -13,6 +13,20 @@ def uniqueOccurrences(self, arr: List[int]) -> bool:
     return True
 
 
+def uniqueOccurrences2(self, arr: List[int]) -> bool:
+    temp = []
+    s = set(arr)
+    for i in s:
+        temp.append(arr.count(i))
+
+    new_set = set(temp)
+
+    if len(new_set) != len(temp):
+        return False
+
+    return True
+
+
 
 
 
